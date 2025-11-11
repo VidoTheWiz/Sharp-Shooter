@@ -7,7 +7,7 @@ public class Robot : MonoBehaviour
     FirstPersonController player;
     NavMeshAgent agent;
 
-    private void Awake()
+    void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
     }
