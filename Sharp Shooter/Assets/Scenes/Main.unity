@@ -1736,6 +1736,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ecd9b334c43acf479bd3d16317a6907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Weapon
+  hitVFXPrefab: {fileID: 8674412746108013180, guid: f67f2ca8eef490f42a1d1c72d03b7875, type: 3}
   animator: {fileID: 314751834}
   muzzleFlash: {fileID: 937299211204113901}
   damageAmount: 1
@@ -2037,7 +2038,15 @@ PrefabInstance:
     m_TransformParent: {fileID: 1906352872}
     m_Modifications:
     - target: {fileID: 2442472309507821437, guid: 824aa5234326a07408bea475b0465f0b, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2442472309507821437, guid: 824aa5234326a07408bea475b0465f0b, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: d754c1d49e8b15145a5c7969f6f719cc, type: 2}
+    - target: {fileID: 2442472309507821437, guid: 824aa5234326a07408bea475b0465f0b, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
       value: 
       objectReference: {fileID: 2100000, guid: f1b0fea076fb0574d868f6e3d9523f52, type: 2}
     - target: {fileID: 4228496125089883935, guid: 824aa5234326a07408bea475b0465f0b, type: 3}
@@ -2101,6 +2110,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8937508244786415908, guid: 824aa5234326a07408bea475b0465f0b, type: 3}
+      propertyPath: lengthInSec
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 8937508244786415908, guid: 824aa5234326a07408bea475b0465f0b, type: 3}
       propertyPath: playOnAwake
       value: 0
       objectReference: {fileID: 0}
@@ -2122,7 +2135,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8937508244786415908, guid: 824aa5234326a07408bea475b0465f0b, type: 3}
       propertyPath: ShapeModule.radiusThickness
-      value: 1.0000
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8937508244786415908, guid: 824aa5234326a07408bea475b0465f0b, type: 3}
       propertyPath: InitialModule.startSpeed.scalar
